@@ -1,8 +1,10 @@
 *{
     font-family: 'Rubik', sans-serif;
-    padding: 0;
-    margin: 0;
-
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: hsl(270, 20%, 96%);
 }
 
 .main{
@@ -43,7 +45,7 @@
 .container-cover{
     margin: 0 auto;
     width: 1000px;
-    height: 640px;
+    height: 800px;
     padding: 10px;
     display: flex;
 }
@@ -262,4 +264,88 @@
     color: rgb(182, 180, 180);
     font-size: 13px;
     padding: 7px;
+}
+
+/* MEDIA QUERIES */
+
+
+@media (max-width: 1160px){
+    .container-cover{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        width: 300px;
+        margin: 0px;
+    }
+    .app{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+    }
+
+    .container-main{
+        width: 100%;
+        background-color: hsl(270, 20%, 96%);
+        /* background-color: brown; */
+    }
+
+    .info{
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+    }
+    .paragrafo{
+        width: 320px;
+        flex-wrap: wrap;
+    }
+
+    .main-roxo{
+        width: 500px;
+        height: 900px;
+    } 
+}
+
+@media (max-width: 550px){
+
+    .app{
+        margin-top: -80px;
+    }
+
+    .container-cover{
+        width: 100%;
+    }
+    .info{
+        width: 300px;
+        padding: 10px;
+    }
+    .main-roxo{
+        width: 100%;
+        height: 800px;
+        margin-left: 0px;
+    }
+
+    .titulo{ 
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 15px;
+        color: hsl(271, 36%, 24%);
+    }
+
+    .paragrafo p{
+        width: 300px;
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 400px){
+    .app{
+        padding: 10px;
+    }
+    .main-roxo{
+        width: 0px;
+        height: 0px;
+    }
 }
